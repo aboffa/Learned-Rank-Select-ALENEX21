@@ -1,0 +1,43 @@
+\coordinate (bot) at (rel axis cs:1,0);% coordinate at bottom of the last plot
+% legend
+\path (top|-current bounding box.south)--
+coordinate(legendpos)
+(bot|-current bounding box.south);
+\matrix[,
+style={nodes={inner sep=2.1pt,anchor=base west,scale=0.8, transform shape}},
+matrix of nodes,
+anchor=south,
+draw,
+inner sep=0.2em,
+draw,
+]at([yshift=-3.2cm]legendpos){
+	\ref{plots:plot1}& $\texttt{sdsl::rrr\_vector<}15\texttt{>}$&
+	\ref{plots:plot2}& $\texttt{sdsl::rrr\_vector<}31\texttt{>}$&
+	\ref{plots:plot3}& $\texttt{sdsl::rrr\_vector<}63\texttt{>}$&
+	\ref{plots:plot4}& $\texttt{sdsl::rrr\_vector<}127\texttt{>}$\\[2.7pt]
+	\ref{plots:plot5}& $\texttt{sdsl::sd\_vector}$&
+	\ref{plots:plot6}& $\texttt{ds2i::uniform\_partitioned}$&
+	\ref{plots:plot7}& $\texttt{ds2i::opt\_partitioned}$\\
+	\ref{plots:plot8}& $\texttt{la\_vector<}6\texttt{>}$&
+	\ref{plots:plot9}& $\texttt{la\_vector<}7\texttt{>}$&
+	\ref{plots:plot10}& $\texttt{la\_vector<}8\texttt{>}$&
+	\ref{plots:plot11}& $\texttt{la\_vector<}9\texttt{>}$\\
+	\ref{plots:plot12}& $\texttt{la\_vector<}10\texttt{>}$&
+	\ref{plots:plot13}& $\texttt{la\_vector<}11\texttt{>}$&
+	\ref{plots:plot14}& $\texttt{la\_vector<}12\texttt{>}$&
+	\ref{plots:plot15}& $\texttt{la\_vector<}13\texttt{>}$\\
+	\ref{plots:plot16}& $\texttt{la\_vector<}14\texttt{>}$&
+	\ref{plots:plot17}& $\texttt{la\_vector\_opt}$ \\
+	\ref{plots:plot18}& $\texttt{sdsl::enc\_vector<}\delta,2^3\texttt{>}$&
+	\ref{plots:plot19}& $\texttt{sdsl::enc\_vector<}\gamma,2^3\texttt{>}$&
+	\ref{plots:plot20}& $\texttt{sdsl::enc\_vector<}\delta,2^4\texttt{>}$&
+	\ref{plots:plot21}& $\texttt{sdsl::enc\_vector<}\gamma,2^4\texttt{>}$\\
+	\ref{plots:plot22}& $\texttt{sdsl::enc\_vector<}\delta,2^5\texttt{>}$&
+	\ref{plots:plot23}& $\texttt{sdsl::enc\_vector<}\gamma,2^5\texttt{>}$&
+	\ref{plots:plot24}& $\texttt{sdsl::enc\_vector<}\delta,2^6\texttt{>}$&
+	\ref{plots:plot25}& $\texttt{sdsl::enc\_vector<}\gamma,2^6\texttt{>}$\\
+	\ref{plots:plot26}& $\texttt{sdsl::enc\_vector<}\delta,2^7\texttt{>}$&
+	\ref{plots:plot27}& $\texttt{sdsl::enc\_vector<}\gamma,2^7\texttt{>}$&
+	\ref{plots:plot28}& $\texttt{sdsl::enc\_vector<}\delta,2^8\texttt{>}$&
+	\ref{plots:plot29}& $\texttt{sdsl::enc\_vector<}\gamma,2^8\texttt{>}$\\
+};

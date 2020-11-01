@@ -1,0 +1,6 @@
+[submodule "lib/ds2i"]
+	path = lib/ds2i
+	url = https://github.com/ot/ds2i.git
+[submodule "lib/la_vector"]
+	path = lib/la_vector
+	url = https://github.com/gvinciguerra/la_vector
